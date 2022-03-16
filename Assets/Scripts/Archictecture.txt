@@ -1,36 +1,36 @@
-Managers
-GameManager
-SoundManager
-SaveManager
-LevelManager
-InputManager
-SceneManager
+Principais classes e responsabilidades
+
+Managers (gerenciadores gerais)
+---------------------
+GameManager (gerenciar o estado global do jogo)
+SoundManager (gerenciar a execução de som/música)
+SaveManager (gerenciar persistência de dados do jogo)
+SceneTransitionManager (gerenciar a trasição de cenas)
+LevelManager (gerenciar o estado da fase atual)
+
+Interfaces
+---------------------
+IDead (para objetos que podem morrer no jogo)
+IKill (para objetos que podem matar no jogo)
 
 Player
-PlayerController
-PlayerInputController
-PlayerAnimationController
-IDead
-
-PlayerAttack
-IKill
+---------------------
+PlayerController (controles gerais de jogador)
+PlayerController_Dead (controlar o estado do player referente a morte)
+PlayerInputController (controla a entrada de dados do usuário e vincula aos controles do player)
+PlayerAnimationController (controla animações do player)
 
 Zombie
-ZombieController
-ZombieAnimationController
-IKill
-IDead
+---------------------
+ZombieController (controles gerais do zombie)
+ZombieController_Dead (controlar o estado do zombie referente a morte)
+ZombieAnimationController (controla animações do zombie)
 
 Saw
-SawController
-SawAnimationController
-IKill
+---------------------
+SawController (controles gerais da serra)
+SawAnimationController (controla animações da serra)
 
 Camera
-CameraController
-
-Main Menu
-MainMenuController
-
-Cleared Level
-ClearLevelController
+---------------------
+CameraController (controle simples de câmera)

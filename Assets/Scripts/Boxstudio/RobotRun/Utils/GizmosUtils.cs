@@ -4,7 +4,9 @@ namespace Boxstudio.RobotRun.Utils {
   public class GizmosUtils {
 
     public static void SetColor(Color color){
+      #if UNITY_EDITOR
        UnityEditor.Handles.color = color;
+      #endif
     }
 
     public static void DrawCircle(Vector2 position, float radius){
@@ -12,7 +14,9 @@ namespace Boxstudio.RobotRun.Utils {
     }
 
     public static void DrawCircle(Circle circle){
-      UnityEditor.Handles.DrawWireDisc(circle.position, Vector3.back, circle.radius);
+      #if UNITY_EDITOR
+        UnityEditor.Handles.DrawWireDisc(circle.position, Vector3.back, circle.radius);
+      #endif
     }
   }
 }

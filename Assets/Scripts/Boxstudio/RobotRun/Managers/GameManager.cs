@@ -5,7 +5,6 @@ namespace Boxstudio.RobotRun.Managers {
 
     public static GameManager instance;
 
-
     void Start(){
       if(instance != null){
         GameObject.Destroy(gameObject);
@@ -15,10 +14,5 @@ namespace Boxstudio.RobotRun.Managers {
         DontDestroyOnLoad(gameObject);
       }
     }
-
-    void Update(){
-
-    }
-
   }
 }

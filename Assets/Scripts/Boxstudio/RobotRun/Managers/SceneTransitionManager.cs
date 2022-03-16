@@ -8,7 +8,6 @@ using UnityEngine.UI;
 using Boxstudio.RobotRun.Utils;
 
 namespace Boxstudio.RobotRun.Managers {
-
   public class SceneTransitionManager : MonoBehaviour {
 
     public static SceneTransitionManager instance;

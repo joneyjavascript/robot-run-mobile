@@ -112,7 +112,6 @@ GameObject:
   - component: {fileID: 2795905919574965848}
   - component: {fileID: 2795905919574964647}
   - component: {fileID: 2795905919574964644}
-  - component: {fileID: 2795905919574964643}
   - component: {fileID: 5373763798997452717}
   - component: {fileID: 3003379218825989679}
   - component: {fileID: 2555804474015948280}
@@ -174,18 +173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3e518ce3ee4ae848b9038e23fcb8026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2795905919574964643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2795905919574964642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18cf16c87f1201145b96e3957931c519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5373763798997452717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e67b2cee92adaff418cfc3218af9164b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _androidGameId: 4658211
+  _testMode: 1
 --- !u!1 &6335283999471869339
 GameObject:
   m_ObjectHideFlags: 0
