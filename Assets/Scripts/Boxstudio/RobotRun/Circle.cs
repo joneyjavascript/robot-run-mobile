@@ -1,5 +1,4 @@
 using UnityEngine;
-
 namespace Boxstudio.RobotRun {
   public class Circle {
     public Vector2 position = Vector2.zero;

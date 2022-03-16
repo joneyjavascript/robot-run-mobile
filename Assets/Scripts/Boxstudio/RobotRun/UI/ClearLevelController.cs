@@ -12,13 +12,5 @@ namespace Boxstudio.RobotRun.UI {
 
   public class ClearLevelController : MonoBehaviour {
 
-    void Start(){
-
-    }
-
-    void Update(){
-
-    }
-
   }
 }

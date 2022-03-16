@@ -1,17 +1,4 @@
-
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
-
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
-using Boxstudio.RobotRun.Utils;
-
-using TMPro;
 
 namespace Boxstudio.RobotRun.Managers {
   public class ScoreManager : MonoBehaviour {
