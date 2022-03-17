@@ -8,7 +8,6 @@ public class AdsManager : MonoBehaviour
 
     [SerializeField] string _androidGameId;
     [SerializeField] bool _testMode = true;
-    private string _gameId;
 
     int countDownAds = 0;
 
@@ -33,12 +32,16 @@ public class AdsManager : MonoBehaviour
     {
       if (Advertisement.IsReady())
       {
+        Debug.Log("Advertisement.Show");
         Advertisement.Show();
+      } else {
+        Debug.Log("Advertisement Not Ready");
       }
     }
  
     public void InitializeAds()
     {
-      Advertisement.Initialize(_androidGameId, _testMode, this);
+      Debug.Log("Advertisement.Initialize - " + _androidGameId + (_testMode ? "(TestMode)" : ""));
+      Advertisement.Initialize(_androidGameId, _testMode);
     }
 }
